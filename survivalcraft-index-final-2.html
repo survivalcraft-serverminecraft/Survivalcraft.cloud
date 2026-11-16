@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Survivalcraft Store</title>
+<style>
+:root{--bg:#090611;--panel:#160d20;--panel2:#1d1028;--line:#39204c;--orange:#ff8500;--gold:#ffb32c;--text:#f5f0fa;--muted:#aaa0b5;--purple:#b77cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#29152b 0%,#100a18 42%,var(--bg) 100%);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(100% - 28px,900px);margin:auto}
+.hero{min-height:210px;padding:28px 0 78px;background:linear-gradient(120deg,#1d1830dd,#11101ddd),radial-gradient(circle at 80% 20%,#643d69,#111);border-bottom:1px solid #392044}
+.hero-top{display:flex;justify-content:space-between;gap:14px;align-items:center;color:#ffd18a;font-weight:700}.pill{border:1px solid #8d4c16;background:#291629;border-radius:30px;padding:8px 13px;font-size:13px}
+.brand{margin-top:35px;border:1px solid #71401e;border-radius:22px;background:#130d1deF;padding:20px;box-shadow:0 0 22px #ff850022}
+.brandline{display:flex;gap:15px;align-items:center}.logo{width:62px;height:62px;border-radius:17px;display:grid;place-items:center;background:#321a25;border:1px solid #99501d;font-size:30px}.brand h1{font-family:Georgia,serif;color:var(--gold);font-size:25px;margin:0}.brand p{margin:2px 0 0;color:var(--muted)}
+.actions{display:flex;gap:10px;margin-top:18px;border-top:1px solid #34243b;padding-top:16px}.btn{border:0;border-radius:13px;padding:12px 18px;background:linear-gradient(110deg,#ff7900,#ffad13);font-weight:800;color:#190d16;display:inline-block;cursor:pointer}.btn.alt{background:#24152d;color:#eee;border:1px solid #523565}
+nav{margin-top:20px;padding:5px;border:1px solid #432653;border-radius:22px;background:#120b1c;display:grid;gap:8px;box-shadow:0 0 18px #8b37aa18}
+nav a{display:flex;align-items:center;gap:18px;padding:16px 18px;border:1px solid #392348;border-radius:17px;color:#d9d4e0;font-size:18px;font-weight:750;background:#160e21}
+nav a span{font-size:22px;width:32px;text-align:center}nav a.active,nav a:hover{border-color:#ff8210;background:linear-gradient(100deg,#49201d,#25142d);color:#ffb02c;box-shadow:inset 0 -3px #ff7900}
+section{margin:22px 0;padding:22px;border:1px solid #3d284d;border-radius:22px;background:linear-gradient(145deg,#1a1025,#100b19);box-shadow:0 10px 30px #0004}
+h2{font-size:22px;margin:0 0 14px}h3{font-size:18px;margin:0 0 6px}.muted{color:var(--muted)}.center{text-align:center}
+.donor{max-width:540px;margin:auto;padding:22px;border:1px solid #33213f;border-radius:18px;background:#100b19}.avatar{font-size:68px;margin:8px}.tag{display:inline-block;border:1px solid #95631c;background:#33220f;color:#ffcf67;border-radius:30px;padding:5px 13px;font-size:13px;font-weight:800}
+.warn{border-color:#74401e}.warn-head{color:#ffd2a0}.warnrow{display:flex;gap:13px;margin:18px 0}.warnicon{flex:0 0 44px;height:44px;display:grid;place-items:center;border:1px solid #9a501c;border-radius:13px;background:#321a25;font-size:21px}.warnrow p{margin:0;color:#c5b5d4}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.product{border:1px solid #50315e;border-radius:17px;background:#170e22;padding:17px}.product .price{font-size:20px;font-weight:900;color:#ffb12a;margin:8px 0}.product small{color:#b7a9c5}.product .btn{width:100%;text-align:center;margin-top:10px}
+.steps li{margin:10px 0;color:#c7bdcf}.footer{text-align:center;color:#8d8298;padding:25px 10px 45px;font-size:13px}
+.hidden{display:none!important}.notice{font-size:13px;color:#b6a8c4;margin-top:10px}
+@media(max-width:560px){.wrap{width:min(100% - 20px,900px)}.hero{padding-top:20px}.brand{padding:16px}.brand h1{font-size:21px}section{padding:18px}.cards{grid-template-columns:1fr}nav a{padding:14px;font-size:17px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap">
+  <div class="hero-top"><span>🎮 Survivalcraft.cloud</span><a class="pill" href="#kontak">Discord komunitas ↗</a></div>
+  <div class="brand">
+   <div class="brandline"><div class="logo">🛒</div><div><h1>SURVIVALCRAFT STORE</h1><p>Official store untuk rank dan kebutuhan server</p></div></div>
+   <div class="actions"><a class="btn" href="#rank">🛍 Lihat Produk</a><a class="btn alt" href="#kontak">🌐 Komunitas</a></div>
+  </div>
+ </div>
+</header>
+<main class="wrap">
+ <nav aria-label="Navigasi toko">
+  <a class="active" href="#beranda"><span>⌂</span>Beranda</a>
+  <a href="#rank"><span>♛</span>Ranks</a>
+  <a href="#gems"><span>🪙</span>Gems</a>
+  <a href="#leaderboard"><span>🏆</span>Leaderboard</a>
+  <a href="#riwayat"><span>◴</span>Order History</a>
+ </nav>
+ <section id="leaderboard" class="center">
+  <h2><span class="pill">🏆 TOP DONATOR BULAN INI</span></h2>
+  <div class="donor"><div class="avatar">🧑🏻‍💻</div><div class="muted">Pemain terbaik bulan ini</div><h2 style="margin:4px 0">Belum tersedia</h2><span class="tag">#1 Donator Bulan Ini</span></div>
+  <p><a class="btn" href="#rank">Lihat produk lainnya →</a></p>
+ </section>
+ <section class="warn">
+  <h2 class="warn-head">⚠️ Peringatan Pembelian Rank & Garansi</h2>
+  <span class="pill">🛡 PERINGATAN RESMI</span>
+  <div class="warnrow"><div class="warnicon">🏪</div><div><h3>Hanya Beli di Official Store</h3><p>Pembelian rank resmi dilakukan melalui toko resmi Survivalcraft.cloud.</p></div></div>
+  <div class="warnrow"><div class="warnicon">✳️</div><div><h3>Garansi sesuai ketentuan</h3><p>Pastikan membaca ketentuan produk dan menyimpan bukti pembayaran.</p></div></div>
+  <div class="warnrow"><div class="warnicon">🚫</div><div><h3>Hati-hati penipuan</h3><p>Jangan mengirim pembayaran ke rekening atau QRIS yang tidak diumumkan admin resmi.</p></div></div>
+ </section>
+ <section id="beranda">
+  <h2>Selamat datang di Survivalcraft Store!</h2>
+  <p class="muted">Survivalcraft Store adalah tempat untuk mendukung perkembangan server melalui pembelian <b>rank</b>, <b>gems</b>, dan benefit in-game lainnya.</p>
+  <h2 style="margin-top:25px">Kenapa pilih toko kami?</h2>
+  <p class="muted">Proses pemesanan dibuat sederhana dan transparan. Dukungan kamu membantu biaya operasional, pengembangan fitur, serta event komunitas.</p>
+  <h2 style="margin-top:25px">Cara kerjanya</h2>
+  <ol class="steps"><li>Pilih produk yang kamu butuhkan.</li><li>Masukkan username Minecraft dengan benar saat menghubungi admin.</li><li>Selesaikan pembayaran setelah admin mengonfirmasi pesanan.</li><li>Admin memproses benefit sesuai ketentuan produk.</li></ol>
+ </section>
+ <section id="rank">
+  <h2>♛ Ranks</h2><p class="muted">Pilih rank yang ingin kamu pesan. Harga berikut contoh katalog awal dan bisa kamu ubah.</p>
+  <div class="cards" id="rankCards"></div>
+ </section>
+ <section id="gems">
+  <h2>🪙 Gems</h2><p class="muted">Paket gems akan ditampilkan di sini.</p>
+  <div class="product"><h3>Paket Gems</h3><div class="price">Segera hadir</div><small>Hubungi admin untuk informasi paket.</small></div>
+ </section>
+ <section id="riwayat">
+  <h2>◴ Order History</h2><p class="muted">Riwayat pesanan belum tersedia pada versi website statis ini. Simpan bukti chat dan pembayaran untuk pengecekan oleh admin.</p>
+ </section>
+ <section id="kontak">
+  <h2>Butuh bantuan?</h2><p class="muted">Hubungi admin toko untuk bertanya tentang rank, gems, dan status pesanan.</p>
+  <a class="btn" href="https://wa.me/628XXXXXXXXXX?text=Halo%20Admin%20Survivalcraft%2C%20saya%20ingin%20bertanya%20tentang%20rank." target="_blank" rel="noopener">Chat WhatsApp Admin</a>
+  <p class="notice">Ganti nomor WhatsApp contoh di kode dengan nomor admin kamu. Format: 62 diikuti nomor tanpa angka 0 di depan.</p>
+ </section>
+</main>
+<footer class="footer">© 2026 Survivalcraft.cloud · Website komunitas</footer>
+<script>
+const ranks=[
+ ["Loyal","Rp5.000"],["Supporter","Rp10.000"],["Pro","Rp20.000"],["Platinum","Rp25.000"],
+ ["Elite","Rp30.000"],["Legend","Rp45.000"],["Lord","Rp80.000"],["Glory","Rp100.000"],["Mirlace","Rp170.000"]
+];
+const target=document.getElementById("rankCards");
+ranks.forEach(([name,price])=>{
+ const card=document.createElement("article");card.className="product";
+ card.innerHTML=`<h3>♛ ${name}</h3><div class="price">${price}</div><small>Rank permanen · Detail benefit konfirmasi ke admin</small><a class="btn order" href="#kontak">Pesan rank</a>`;
+ target.appendChild(card);
+});
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{
+ document.querySelectorAll('nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active');
+}));
+</script>
+</body>
+</html>
