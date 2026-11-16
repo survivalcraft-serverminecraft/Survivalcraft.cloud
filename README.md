@@ -1,1 +1,2 @@
 # Survivalcraft.cloud
+server Minecraft 
